@@ -1,11 +1,31 @@
-manifest:
-  remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-  projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
-  self:
-    path: config
+name: Build and Upload Artifact
+
+on:
+  workflow_call:
+    inputs:
+      artifact-path:
+        description: "Path to the artifact"
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build the project
+        run: |
+          mkdir -p build
+          echo "This is a test build artifact" > build/test-file.txt
+          zip -r ${{ inputs.artifact-path }} build/
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4.6.0
+        with:
+          name: build-artifact
+          path: ${{ inputs.artifact-path }}
