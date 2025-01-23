@@ -1,5 +1,14 @@
-on: [push, pull_request, workflow_dispatch]
+name: Build Workflow
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
     uses: LOWPROKB/zmk/.github/workflows/build-user-config.yml@corne-ish-zen-v2
+    with:
+      artifact-path: ./build/build.zip # Adjust the path to your artifact
+    secrets:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
