@@ -44,10 +44,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q           &kp W           &kp F        &kp P             &kp B          &kp J        &kp L              &kp U        &kp Y            &kp SEMI        &kp BSPC
-&kp ESCAPE    &mt LEFT_WIN A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G          &kp M        &mt RIGHT_SHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt LEFT_WIN O  &kp ESCAPE
-&kp LEFT_ALT  &kp X           &kp C           &kp D        &kp V             &kp Z          &kp K        &kp H              &kp COMMA    &kp DOT          &kp FSLH        &kp SQT
-                                              &trans       &to 3             &lt 1 SPACE    &lt 2 ENTER  &to 3              &mo 5
+&kp TAB  &kp Q           &kp W         &kp F        &kp P             &kp B          &kp J        &kp L              &kp U        &kp Y            &kp SEMI          &kp BSPC
+&trans   &mt LEFT_WIN A  &mt ESCAPE R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G          &kp M        &mt RIGHT_SHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt LEFT_WIN O    &kp SQT
+&trans   &kp X           &kp C         &kp D        &kp V             &kp Z          &kp K        &kp H              &kp COMMA    &kp DOT          &mt ESCAPE SLASH  &trans
+                                       &trans       &to 3             &lt 1 SPACE    &lt 2 ENTER  &to 3              &mo 5
             >;
         };
 
@@ -79,7 +79,7 @@
 
             bindings = <
 &kp TAB       &kp EXCL  &kp AT                &kp HASH               &kp DLLR   &kp PRCNT               &kp CARET  &kp AMPS   &kp ASTRK  &trans    &trans  &kp BSPC
-&kp ESCAPE    &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp TILDE               &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &trans  &trans
+&trans        &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp TILDE               &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &trans  &trans
 &kp LEFT_ALT  &trans    &trans                &none                  &kp PIPE   &kp NON_US_BACKSLASH    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &trans  &trans
                                               &trans                 &trans     &kp SPACE               &kp RET    &trans     &trans
             >;
@@ -89,8 +89,8 @@
             display-name = "Fn";
             bindings = <
 &kp TAB       &kp F1          &kp F2          &kp F3          &kp F4           &kp F5             &kp F6           &kp F7          &kp F8          &kp F9           &kp F10          &kp F11
-&kp ESCAPE    &msc SCRL_LEFT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT    &msc SCRL_LEFT   &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT  &kp ESCAPE
-&kp LEFT_ALT  &kp DELETE      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PRINTSCREEN    &kp PRINTSCREEN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp DELETE       &kp F12
+&kp ESCAPE    &msc SCRL_LEFT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT    &msc SCRL_LEFT   &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT  &kp F12
+&kp LEFT_ALT  &kp DELETE      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PRINTSCREEN    &kp PRINTSCREEN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp DELETE       &kp ESCAPE
                                               &to 0           &mkp MB2         &mkp MB1           &mkp MB1         &mkp MB2        &to 0
             >;
         };
@@ -98,8 +98,8 @@
         layer_4 {
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E   &kp R   &kp T        &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSPC
-&kp LALT   &kp A  &kp S  &kp D   &kp F   &kp G        &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp ESCAPE
-&kp LSHFT  &kp Z  &kp X  &kp C   &kp V   &kp B        &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp F4
+&kp LALT   &kp A  &kp S  &kp D   &kp F   &kp G        &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp F4
+&kp LSHFT  &kp Z  &kp X  &kp C   &kp V   &kp B        &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp ESCAPE
                          &kp N2  &kp N1  &kp SPACE    &kp ENTER  &kp LGUI  &to 0
             >;
         };
