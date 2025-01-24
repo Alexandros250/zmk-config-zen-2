@@ -44,10 +44,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB  &kp Q           &kp W         &kp F        &kp P             &kp B          &kp J        &kp L              &kp U        &kp Y            &kp SEMI          &kp BSPC
-&trans   &mt LEFT_WIN A  &mt ESCAPE R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G          &kp M        &mt RIGHT_SHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt LEFT_WIN O    &kp SQT
-&trans   &kp X           &kp C         &kp D        &kp V             &kp Z          &kp K        &kp H              &kp COMMA    &kp DOT          &mt ESCAPE SLASH  &trans
-                                       &trans       &to 3             &lt 1 SPACE    &lt 2 ENTER  &to 3              &mo 5
+&kp TAB       &kp Q           &kp W         &kp F        &kp P             &kp B          &kp J        &kp L              &kp U        &kp Y            &trans            &kp BSPC
+&kp LEFT_ALT  &mt LEFT_WIN A  &mt ESCAPE R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G          &kp M        &mt RIGHT_SHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt LEFT_WIN O    &trans
+&trans        &kp X           &kp C         &kp D        &kp V             &kp Z          &kp K        &kp H              &kp COMMA    &kp DOT          &mt ESCAPE SLASH  &trans
+                                            &trans       &to 3             &lt 1 SPACE    &lt 2 ENTER  &to 3              &mo 5
             >;
         };
 
@@ -78,10 +78,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB       &kp EXCL  &kp AT                &kp HASH               &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp BACKSLASH  &trans  &kp BSPC
-&trans        &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp TILDE    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT       &trans  &trans
-&kp LEFT_ALT  &trans    &trans                &none                  &kp PIPE   &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC       &trans  &trans
-                                              &trans                 &trans     &kp SPACE    &kp RET    &trans     &trans
+&kp TAB       &kp EXCL  &kp AT                &kp HASH               &kp DLLR   &kp PRCNT        &kp CARET  &kp AMPS   &kp ASTRK         &kp BACKSLASH      &trans  &kp BSPC
+&trans        &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp TILDE        &kp EQUAL  &kp MINUS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans
+&kp LEFT_ALT  &trans    &kp SQT               &kp DOUBLE_QUOTES      &kp PIPE   &trans           &kp UNDER  &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
+                                              &trans                 &kp COLON  &kp SEMICOLON    &kp RET    &trans     &trans
             >;
         };
 
