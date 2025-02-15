@@ -44,10 +44,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB   &kp Q           &kp W         &mt F4 F     &lt 3 P           &kp B          &kp J        &mt F6 L           &mt F12 U    &kp Y            &trans            &kp BSPC
-&mkp MB1  &mt LEFT_WIN A  &mt ESCAPE R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G          &kp M        &mt RIGHT_SHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt LEFT_WIN O    &mkp MB1
-&trans    &kp X           &kp C         &kp D        &kp V             &kp Z          &kp K        &kp H              &kp COMMA    &kp DOT          &mt ESCAPE SLASH  &trans
-                                        &trans       &to 3             &lt 1 SPACE    &lt 2 ENTER  &to 3              &mo 5
+&kp TAB   &kp Q           &mt CAPSLOCK W  &mt F4 F     &lt 3 P           &kp B          &kp J        &mt F6 L           &mt F12 U    &mt CAPSLOCK Y   &trans            &kp BSPC
+&mkp MB1  &mt LEFT_WIN A  &mt ESCAPE R    &mt LCTRL S  &mt LEFT_SHIFT T  &kp G          &kp M        &mt RIGHT_SHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt LEFT_WIN O    &mkp MB1
+&trans    &kp X           &kp C           &kp D        &kp V             &kp Z          &kp K        &kp H              &kp COMMA    &kp DOT          &mt ESCAPE SLASH  &trans
+                                          &trans       &to 3             &lt 1 SPACE    &lt 2 ENTER  &to 3              &mo 5
             >;
         };
 
