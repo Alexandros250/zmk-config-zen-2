@@ -42,9 +42,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB  &kp Q           &mt CAPSLOCK W  &mt F4 F     &lt 3 P           &mt F5 B       &mt F6 J     &mt F3 L           &mt F12 U    &mt CAPSLOCK Y   &trans            &kp BSPC
-&trans   &mt LEFT_WIN A  &mt ESCAPE R    &mt LCTRL S  &mt LEFT_SHIFT T  &kp G          &kp M        &mt RIGHT_SHIFT N  &mt LCTRL E  &mt RIGHT_ALT I  &mt LEFT_WIN O    &mkp MB1
-&trans   &kp X           &kp C           &kp D        &kp V             &kp Z          &kp K        &kp H              &kp COMMA    &kp DOT          &mt ESCAPE SLASH  &kp DELETE
+&kp TAB  &kp Q           &mt CAPSLOCK W  &mt F4 F     &lt 3 P           &mt F5 B       &kp J        &mt F3 L           &mt F12 U    &mt F6 Y         &trans          &kp BSPC
+&trans   &mt LEFT_WIN A  &mt ESCAPE R    &mt LCTRL S  &mt LEFT_SHIFT T  &kp G          &kp M        &mt RIGHT_SHIFT N  &mt LCTRL E  &mt RIGHT_ALT I  &mt LEFT_WIN O  &kp DELETE
+&trans   &kp X           &kp C           &kp D        &kp V             &kp Z          &kp K        &kp H              &kp COMMA    &kp DOT          &kp SLASH       &trans
                                          &trans       &to 3             &lt 1 SPACE    &lt 2 ENTER  &to 3              &mo 5
             >;
         };
@@ -59,10 +59,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1                &kp N2             &kp N3           &kp N4     &kp N5       &kp N6     &kp N7         &kp N8       &kp N9     &kp N0    &kp BSPC
-&trans  &kp C_BRIGHTNESS_INC  &kp LEFT_ARROW     &kp RIGHT_ARROW  &kp GRAVE  &kp TILDE    &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &kp HOME  &kp PG_UP
-&trans  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans     &trans       &trans     &kp PAGE_DOWN  &kp PAGE_UP  &trans     &kp END   &kp PG_DN
-                                                 &to 4            &trans     &kp SPACE    &kp ENTER  &trans         &trans
+&trans  &kp N1  &kp N2             &kp N3           &kp N4                &kp N5                  &kp N6     &kp N7         &kp N8       &kp N9     &kp N0    &kp BSPC
+&trans  &trans  &kp LEFT_ARROW     &kp RIGHT_ARROW  &kp GRAVE             &kp TILDE               &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &kp HOME  &trans
+&trans  &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &trans     &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans    &trans
+                                   &to 4            &trans                &kp SPACE               &kp ENTER  &trans         &trans
             >;
         };
 
@@ -78,7 +78,7 @@
             bindings = <
 &trans  &kp EXCL  &kp AT                &kp HASH               &kp DLLR           &kp PRCNT        &kp CARET  &kp AMPS   &kp ASTRK         &kp BACKSLASH      &trans  &kp BSPC
 &trans  &none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE          &kp TILDE        &kp EQUAL  &kp MINUS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans
-&trans  &trans    &kp PIPE              &kp SQT                &kp DOUBLE_QUOTES  &trans           &kp UNDER  &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
+&trans  &trans    &kp PIPE              &kp SQT                &kp DOUBLE_QUOTES  &none            &kp UNDER  &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
                                         &trans                 &kp COLON          &kp SEMICOLON    &kp RET    &trans     &trans
             >;
         };
@@ -86,10 +86,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&kp TAB       &kp F1          &kp F2          &kp F3          &kp F4           &kp F5             &kp F6           &kp F7          &kp F8          &kp F9           &kp F10          &kp F11
-&kp ESCAPE    &msc SCRL_LEFT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT    &msc SCRL_LEFT   &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT  &kp F12
-&kp LEFT_ALT  &kp DELETE      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PRINTSCREEN    &kp PRINTSCREEN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp DELETE       &kp ESCAPE
-                                              &to 0           &mkp MB2         &mkp MB1           &mkp MB1         &mkp MB2        &to 0
+&none  &kp F1          &kp F2          &kp F3          &kp F4           &kp F5             &kp F6          &kp F7          &kp F8          &kp F9           &kp F10          &kp F11
+&none  &msc SCRL_LEFT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT    &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT  &kp F12
+&none  &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none            &none
+                                       &to 0           &mkp MB2         &mkp MB1           &mkp MB1        &mkp MB2        &to 0
             >;
         };
 
