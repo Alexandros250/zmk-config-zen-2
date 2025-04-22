@@ -44,7 +44,7 @@
             bindings = <
 &kp TAB  &kp Q           &mt CAPSLOCK W  &mt F4 F     &lt 3 P           &mt F5 B       &kp J        &mt F3 L           &mt F12 U    &mt F6 Y         &trans          &kp BSPC
 &trans   &mt LEFT_WIN A  &mt ESCAPE R    &mt LCTRL S  &mt LEFT_SHIFT T  &kp G          &kp M        &mt RIGHT_SHIFT N  &mt LCTRL E  &mt RIGHT_ALT I  &mt LEFT_WIN O  &kp DELETE
-&trans   &kp X           &kp C           &kp D        &kp V             &kp Z          &kp K        &kp H              &kp COMMA    &kp DOT          &kp SLASH       &trans
+&trans   &kp X           &kp C           &kp D        &kp V             &kp Z          &kp K        &kp H              &kp COMMA    &kp DOT          &kp SLASH       &mt F10 PERCENT
                                          &trans       &to 3             &lt 1 SPACE    &lt 2 ENTER  &to 3              &mo 5
             >;
         };
@@ -86,7 +86,7 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&none  &kp F1          &kp F2          &kp F3          &kp F4           &kp F5             &kp F6          &kp F7          &kp F8          &kp F9           &kp F10          &kp F11
+&none  &kp F1          &kp F2          &kp F3          &kp F4           &kp F5             &kp F6          &kp F7          &kp F8          &kp F9           &none            &kp F11
 &none  &msc SCRL_LEFT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT    &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &msc SCRL_RIGHT  &kp F12
 &none  &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none              &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none            &none
                                        &to 0           &mkp MB2         &mkp MB1           &mkp MB1        &mkp MB2        &to 0
